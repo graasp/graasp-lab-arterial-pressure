@@ -22,12 +22,7 @@ const flagPatchingAppInstance = flag(FLAG_PATCHING_APP_INSTANCE);
 const getAppInstance = async () => async (dispatch, getState) => {
   dispatch(flagGettingAppInstance(true));
   try {
-    const { appInstanceId, apiHost, standalone } = getApiContext(getState);
-
-    // if standalone, you cannot connect to api
-    if (standalone) {
-      return false;
-    }
+    const { appInstanceId, apiHost } = getApiContext(getState);
 
     const url = `//${apiHost + APP_INSTANCES_ENDPOINT}/${appInstanceId}`;
 
@@ -84,12 +79,7 @@ const getAppInstance = async () => async (dispatch, getState) => {
 const patchAppInstance = async ({ data } = {}) => async (dispatch, getState) => {
   dispatch(flagPatchingAppInstance(true));
   try {
-    const { appInstanceId, apiHost, standalone } = getApiContext(getState);
-
-    // if standalone, you cannot connect to api
-    if (standalone) {
-      return false;
-    }
+    const { appInstanceId, apiHost } = getApiContext(getState);
 
     const url = `//${apiHost + APP_INSTANCES_ENDPOINT}/${appInstanceId}`;
     const body = {

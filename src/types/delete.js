@@ -1,0 +1,3 @@
+export const DELETE_BULBAR = 'DELETE_BULBAR';
+export const DELETE_MEDULAR = 'DELETE_MEDULAR';
+export const CLEAR_DELETES = 'CLEAR_DELETES';

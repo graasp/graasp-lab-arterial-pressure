@@ -8,5 +8,4 @@ const Root = () => (
     <App />
   </I18nextProvider>
 );
-
 export default Root;

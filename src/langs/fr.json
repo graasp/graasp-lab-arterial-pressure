@@ -1,0 +1,28 @@
+{
+  "translations" : {
+    "This is the student view. Switch to the teacher view by clicking on the URL below.":
+      "Ceci est la vue des étudiants. Passez à la vue enseignant en cliquant sur l’URL ci-dessous.",
+    "This is the teacher view. Switch to the student view by clicking on the URL below.":
+      "Ceci est la vue de l'enseignant. Passez à la vue des étudiants en cliquant sur l’URL ci-dessous.",
+    "Welcome to the Graasp App Starter Kit": "Bienvenue dans le kit de démarrage de l'application Graasp",
+    "Arterial Pressure": "Pression Artérielle",
+    "The lab allows the learner to identify the different organs (spinal cord, nerves and carotid sinus) involved in the nervous mechanism of heart activity. The influence of the section of the different nerves and their stimulation on the functioning of the heart.": "Le laboratoire permet à l'apprenant d'identifier les différents organes (moelle épinière, nerfs et sinus carotidien) impliqués dans le mécanisme nerveux de l'activité cardiaque ainsi que l'influence des différents nerfs sur le fonctionnement du cœur.",
+    "Observe": "Observer",
+    "Test": "Tester",
+    "Coming Soon!": "Bientôt disponible!",
+    "Choose your panel color": "Choisis la couleur de panel",
+    "Language": "Langue",
+    "Display Lab title": "Afficher le titre du Lab",
+    "Normal innervation of the heart": "Innervation normale du coeur",
+    "Section Experiences": "Expériences de Section",
+    "Pneumogastric nerve section": "Section du nerf pneumogastrique",
+    "Sympathetic nerve section": "Section du nerf sympatique",
+    "Stimulation Experiences": "Expériences de Stimulation",
+    "Pneumogastric nerve stimulation": "Stimulation du nerf pneumogastrique",
+    "Sympathetic nerve stimulation": "Stimulation du nerf sympatique",
+    "Suppression Experiences": "Expériences de Suppression",
+    "Heart normal innervation": "Innervation normale du coeur",
+    "Bulbar nerve center removal": "Suppression du centre nerveux bulbaire",
+    "Medullary nerve center removal": "Suppression du centre nerveux médulaire"
+  }
+}

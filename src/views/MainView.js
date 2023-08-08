@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
-import Main from '../layout/Main';
-import SideMenu from '../layout/SideMenu';
-import Styles from '../layout/Styles';
+import Main from '../layout/main/Main';
+import SideMenu from '../layout/sidemenu/SideMenu';
+import Styles from '../layout/sidemenu/Styles';
 import { AppState } from '../config/AppState';
+import Refresher from '../components/refresher/Refresher';
 
 const styles = Styles;
 
@@ -19,6 +20,7 @@ class MainView extends Component {
       <div className={classes.root}>
         <Main />
         <SideMenu />
+        <Refresher />
       </div>
     );
   }

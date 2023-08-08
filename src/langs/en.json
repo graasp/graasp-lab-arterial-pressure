@@ -1,0 +1,26 @@
+{
+  "translations" : {
+    "This is the student view. Switch to the teacher view by clicking on the URL below.": "This is the student view. Switch to the teacher view by clicking on the URL below.",
+    "This is the teacher view. Switch to the student view by clicking on the URL below.": "This is the teacher view. Switch to the student view by clicking on the URL below.",
+    "Welcome to the Graasp App Starter Kit": "Welcome to the Graasp App Starter Kit",
+    "Arterial Pressure": "Arterial Pressure",
+    "The lab allows the learner to identify the different organs (spinal cord, nerves and carotid sinus) involved in the nervous mechanism of heart activity. The influence of the section of the different nerves and their stimulation on the functioning of the heart.": "The lab allows the learner to identify the different organs (spinal cord, nerves and carotid sinus) involved in the nervous mechanism of heart activity. The influence of the section of the different nerves and their stimulation on the functioning of the heart.",
+    "Observe": "Observe",
+    "Test": "Test",
+    "Coming Soon!": "Coming Soon!",
+    "Choose your panel color": "Choose your panel color",
+    "Language": "Language",
+    "Display Lab title": "Display Lab title",
+    "Normal innervation of the heart": "Normal innervation of the heart",
+    "Section Experiences": "Section Experiences",
+    "Pneumogastric nerve section": "Pneumogastric nerve section",
+    "Sympathetic nerve section": "Sympathetic nerve section",
+    "Stimulation Experiences": "Stimulation Experiences",
+    "Pneumogastric nerve stimulation": "Pneumogastric nerve stimulation",
+    "Sympathetic nerve stimulation": "Sympathetic nerve stimulation",
+    "Suppression Experiences": "Suppression Experiences",
+    "Heart normal innervation": "Heart's normal innervation",
+    "Bulbar nerve center removal": "Bulbar nerve center removal",
+    "Medullary nerve center removal": "Medullary nerve center removal"
+  }
+}

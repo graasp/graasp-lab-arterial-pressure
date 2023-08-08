@@ -11,8 +11,7 @@ import {
 } from '../actions';
 import TeacherMode from '../modes/TeacherMode';
 import StudentMode from '../modes/StudentMode';
-import { ReactComponent as GraaspLogo } from '../resources/GraaspLogo.svg';
-
+import GraaspLogo from '../resources/GraaspLogo.svg';
 import './App.css';
 
 export class App extends Component {
@@ -97,7 +96,7 @@ export class App extends Component {
     if (loading) {
       return (
         <div className="App-loader">
-          <GraaspLogo className="App-loader-logo" />
+          <img src={GraaspLogo} className="App-loader-logo" alt="Logo" />
           <Progress
             value={progress}
             barClassName="App-loader-progress-bar"

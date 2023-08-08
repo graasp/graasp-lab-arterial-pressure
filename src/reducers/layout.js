@@ -3,7 +3,6 @@ import {
   TOGGLE_HEADER,
   TOGGLE_LOADER,
   TOGGLE_SIDE_MENU,
-  TOGGLE_NERVE,
 } from '../types';
 
 const INITIAL_STATE = {
@@ -35,11 +34,6 @@ export default (state = INITIAL_STATE, { type, payload }) => {
       return {
         ...state,
         showLoader: payload,
-      };
-    case TOGGLE_NERVE:
-      return {
-        ...state,
-        showNerve: payload,
       };
     default:
       return state;

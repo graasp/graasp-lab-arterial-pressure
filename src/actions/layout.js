@@ -2,7 +2,6 @@ import {
   TOGGLE_SIDE_MENU,
   TOGGLE_HEADER,
   TOGGLE_LOADER,
-  TOGGLE_NERVE,
   CHANGE_THEME_COLOR,
 } from '../types';
 import { patchAppInstance } from './appInstance';
@@ -36,13 +35,6 @@ export const toggleLoader = showLoader => (dispatch) => {
   });
 };
 
-export const toggleNerve = showNerve => (dispatch) => {
-  dispatch({
-    type: TOGGLE_NERVE,
-    payload: showNerve,
-  });
-};
-
 export const changeThemeColor = themeColor => (dispatch, getState) => {
   dispatch({
     type: CHANGE_THEME_COLOR,
@@ -62,6 +54,5 @@ export default {
   toggleSideMenu,
   toggleHeader,
   toggleLoader,
-  toggleNerve,
   changeThemeColor,
 };

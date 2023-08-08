@@ -1,0 +1,36 @@
+.main-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heartDisplay {
+  position: relative;
+  width: 60%;
+}
+
+.normalInervationContainer {
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innervationBtn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem;
+  margin-right: 1rem;
+  height: 20px;
+  width: 20px;
+  border-radius: 500%;
+  border: 4px solid grey;
+  background-color: crimson;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.616);
+}
+
+.innervationBtn:active {
+  transform: translateY(1px);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.836);
+}

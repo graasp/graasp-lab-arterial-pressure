@@ -1,10 +1,3 @@
-import isInFrame from '../utils/isInFrame';
-import {
-  MISSING_API_HOST_MESSAGE,
-  MISSING_APP_INSTANCE_ID_MESSAGE,
-  MISSING_SPACE_ID_MESSAGE,
-} from '../constants/messages';
-
 const flag = type => payload => dispatch => dispatch({
   type,
   payload,
@@ -27,43 +20,17 @@ const isErrorResponse = async (response) => {
 
 const getApiContext = (getState) => {
   const { context } = getState();
-  const {
-    apiHost,
-    appInstanceId,
-    spaceId,
-    userId,
-    offline,
-    subSpaceId,
-    sessionId,
-    dev,
-  } = context;
-
-  if (!dev && !isInFrame()) {
-    return {
-      standalone: true,
-    };
+  const { apiHost, appInstanceId, spaceId } = context;
+  if (!apiHost) {
+    throw Error('missing api host');
   }
-  // these bits of context are needed when running online
-  if (!offline) {
-    if (!apiHost) {
-      throw Error(MISSING_API_HOST_MESSAGE);
-    }
-    if (!appInstanceId) {
-      throw Error(MISSING_APP_INSTANCE_ID_MESSAGE);
-    }
-    if (!spaceId) {
-      throw Error(MISSING_SPACE_ID_MESSAGE);
-    }
+  if (!appInstanceId) {
+    throw Error('missing app instance id');
   }
-  return {
-    apiHost,
-    appInstanceId,
-    spaceId,
-    userId,
-    offline,
-    subSpaceId,
-    sessionId,
-  };
+  if (!spaceId) {
+    throw Error('missing space id');
+  }
+  return { apiHost, appInstanceId, spaceId };
 };
 
 const getSettings = (getState) => {
